@@ -9,7 +9,7 @@ public class Grove {
         trees = new Tree[24];
     }
 
-    public int plant(Tree tree){
+    public int plantTree(Tree tree){
         for (int i = 0; i < trees.length; i++){
             if (trees[i] == null){
                 trees[i] = tree;
@@ -19,8 +19,14 @@ public class Grove {
         return -1;
     }
 
-    public int removeTree(int location){
-        return 0;
+    public Tree removeTree(int location){
+        Tree removedTree = trees[location];
+        trees[location] = null;
+        return removedTree;
     }
 
+
+    // public String toString(){
+        // return trees[1];
+    // }
 }
