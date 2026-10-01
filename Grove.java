@@ -25,8 +25,13 @@ public class Grove {
         return removedTree;
     }
 
-
-    // public String toString(){
-        // return trees[1];
-    // }
+    @Override 
+    public String toString(){
+        int count = 0;
+        for (int i= 0; i < trees.length; i++){
+            if(trees[i] != null)
+                count++;
+        }
+        return "" + count;
+    }
 }
