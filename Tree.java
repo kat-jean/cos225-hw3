@@ -2,20 +2,12 @@ public class Tree {
 
     public int idNum;
     public int ageNum;
-    public String name;
+    public String speciesName;
 
-    public void idNumber(int idNum){
+    public Tree(int idNum, int ageNum, String speciesName){
         this.idNum = idNum;
-    }
-    public void age(int ageNum){
         this.ageNum = ageNum;
-    }
-    public void speciesName(String name){
-        this.name = name;
-    }
-
-    public Tree(int idNum, int ageNum, int name){
-
+        this.speciesName = speciesName;
     }
 
 }
